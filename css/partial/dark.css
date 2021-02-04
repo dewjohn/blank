@@ -1,0 +1,34 @@
+:root {
+  --color-mode: light;
+  --text: #333;
+  --link: #000;
+  --code: #476582;
+  --codebg: rgba(27,31,35,0.05);
+  --bg: #fff;
+  --navbg: #fff;
+  --item: #000;
+  --meta: #bbb;
+  --cpyr: #fff;
+}
+[color-mode='dark'] {
+  --color-mode: 'dark';
+  --text: rgba(255,255,255,0.86);
+  --link: #def2ff;
+  --bg: #181c27;
+  --code: #c3c7cb;
+  --codebg: #3e4b5e;
+  --navbg: #252d38;
+  --item: rgba(255,255,255,0.86);
+  --meta: rgba(187,187,187,0.478);
+  --cpyr: #252d38;
+}
+[color-mode='dark'] img {
+  filter: brightness(50%);
+}
+[color-mode='dark'] .note {
+  filter: brightness(50%);
+}
+[color-mode='dark'] .highlight,
+[color-mode='dark'] .gutter {
+  background-color: #3c495b !important;
+}

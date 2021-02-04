@@ -1,0 +1,800 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  
+      <meta name="author" content="DmxZ">
+  
+  
+  
+      <meta name="description" content="欢迎来到 DmxZ 的自留地！">
+  
+  
+  
+    <link rel="alternate" href="/atom.xml " title="DmxZ" type="application/atom+xml">
+  
+
+  
+
+  <title>hexo-theme-blank 文档-进阶设置 | DmxZ</title>
+
+  
+
+  
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "https://hm.baidu.com/hm.js?9df80ee3a79777ffce442320dbbba26d";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+
+
+
+
+  <link rel="stylesheet" href="/css/style.css" >
+  <link rel="stylesheet" href="/css/partial/dark.css" >
+
+  
+  
+  
+
+  
+    
+      <link rel="stylesheet" href="/css/partial/highlight/atom-one-light.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/a2396837/CDN@latest/css/iconfont.css">
+    
+  
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+</html>
+    
+<div class="nav index" style="height: 60px;">
+    <div class="title animated fadeInDown">
+        <div class="layui-container">
+                <div class="nav-title"><a href="/" title="DmxZ">DmxZ</a></div>
+            <div class="nav-list">
+                <button> <span class=""></span><span style="display: block;"></span><span class=""></span> </button>
+                <ul class="layui-nav" lay-filter="">
+                    
+                        
+                        
+                        
+                        
+                    <li class="layui-nav-item">
+                        <a href="/ ">
+                            <i class=" fab fa-fort-awesome " style="color: rgb(255 107 107);"></i>
+                            <span class="layui-nav-item-name">首页</span>
+                        </a>
+                    </li>
+                    
+                        
+                        
+                        
+                        
+                    <li class="layui-nav-item">
+                        <a href="/archives/ ">
+                            <i class=" fas fa-archive " style="color: rgb(10 189 227);"></i>
+                            <span class="layui-nav-item-name">归档</span>
+                        </a>
+                    </li>
+                    
+                        
+                        
+                        
+                        
+                    <li class="layui-nav-item">
+                        <a href="/tags/ ">
+                            <i class=" fas fa-hashtag " style="color: rgb(254 202 87);"></i>
+                            <span class="layui-nav-item-name">标签</span>
+                        </a>
+                    </li>
+                    
+                        
+                        
+                        
+                        
+                    <li class="layui-nav-item">
+                        <a href="/categories ">
+                            <i class=" far fa-folder-open " style="color: rgb(29 209 161);"></i>
+                            <span class="layui-nav-item-name">分类</span>
+                        </a>
+                    </li>
+                    
+                        
+                        
+                        
+                        
+                    <li class="layui-nav-item">
+                        <a href="/about/ ">
+                            <i class=" fab fa-grav " style="color: rgb(154 106 247);"></i>
+                            <span class="layui-nav-item-name">关于</span>
+                        </a>
+                    </li>
+                    
+                        
+                        
+                        
+                        
+                    <li class="layui-nav-item">
+                        <a href="/guestbook/ ">
+                            <i class=" fab fa-telegram " style="color: hsl(205deg 100% 50%);"></i>
+                            <span class="layui-nav-item-name">留言</span>
+                        </a>
+                    </li>
+                    
+                        
+                        
+                        
+                        
+                    <li class="layui-nav-item">
+                        <a href="/link/ ">
+                            <i class=" fab fa-weixin " style="color: hsl(152deg 73% 45%);"></i>
+                            <span class="layui-nav-item-name">友链</span>
+                        </a>
+                    </li>
+                    
+                        
+                        
+                        
+                        
+                    <li class="layui-nav-item">
+                        <a href="/shuoshuo/ ">
+                            <i class=" fas fa-coffee " style="color:#31c7c1;"></i>
+                            <span class="layui-nav-item-name">说说</span>
+                        </a>
+                    </li>
+                    
+                    
+                        <li class="layui-nav-item">
+                            <i class="far fa-moon" style="font-size: 24px;color: #f8e93e;" id="color-toggle" color-toggle="light"></i>
+                        </li>
+                    
+                    <span class="layui-nav-bar" style="left: 342px; top: 78px; width: 0px; opacity: 0;"></span>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="/js/todark.js"></script>
+
+    
+<header class="header">
+        
+            <div class="logo">
+                    <a href="/"><img src="https://cdn.jsdelivr.net/gh/dewjohn/CDN@latest/images/longmao.jpg" onerror=this.onerror=null,this.src="/img/loading.gif"></a>
+            </div>
+         
+    </div>
+     
+    
+            <div class="social">
+                
+                        <a class="social-icon" href="https://github.com/a2396837" target="_blank" title="Github">
+                            <i class="iconfont icon-GitHub" aria-hidden="true"></i>
+                          </a>
+                 
+                        <a class="social-icon" href="mailto:894049579@qq.com" target="_blank" title="Email">
+                            <i class="iconfont icon-email" aria-hidden="true"></i>
+                          </a>
+                 
+                        <a class="social-icon" href="https://steamcommunity.com/id/a2396837" target="_blank" title="Steam">
+                            <i class="iconfont icon-steam" aria-hidden="true"></i>
+                          </a>
+                 
+                        <a class="social-icon" href="https://space.bilibili.com/8823569" target="_blank" title="Bilibili">
+                            <i class="iconfont icon-bilibili" aria-hidden="true"></i>
+                          </a>
+                 
+                        <a class="social-icon" href="https://music.163.com/#/user/home?id=262078590" target="_blank" title="Netmusic">
+                            <i class="iconfont icon-wangyiyunyinle1" aria-hidden="true"></i>
+                          </a>
+                 
+                        <a class="social-icon" href="/atom.xml" target="_blank" title="rss">
+                            <i class="iconfont icon-rss" aria-hidden="true"></i>
+                          </a>
+                 
+            </div>
+     
+</header>
+
+    
+<article id="post">
+  <div class="post-title">hexo-theme-blank 文档-进阶设置</div>
+  
+<div class="post-meta">
+    
+      <div class="post-meta-item top">
+        <i class="far fa-bookmark"></i>
+        <span class="sticky">置顶</span>
+      </div>
+    
+    
+      <div class="post-meta-item date">
+        <span title="发表于 2020.05.19"><i class="far fa-calendar-alt"></i> 2020.05.19</span>
+      </div>
+      <div class="post-meta-item updated">
+        <span title="更新于 2021.02.04"><i class="far fa-calendar-check"></i> 2021.02.04</span>
+      </div>
+     
+    
+      <div class="post-meta-item categories">
+        
+          <i class="fas fa-inbox article-meta__icon"></i> <a href="/categories/hexo/">hexo</a>
+        
+          <i class="fas fa-inbox article-meta__icon"></i> <a href="/categories/hexo/blank/">blank</a>
+        
+      </div>
+     
+    
+     <div class="post-meta-item wordcount">
+        
+          <i class="fas fa-pencil-alt"></i> <span class="post-count">2.2k 字</span>
+           
+        
+          <i class="far fa-clock"></i> <span class="post-count">10 分钟</span>
+                               
+      </div>
+     
+</div>
+
+
+  
+    <div id="toc" class="toc">
+          <h1>目录</h1>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AF%BC%E8%88%AA%E6%A0%8F%E8%8F%9C%E5%8D%95"><span class="toc-number">1.</span> <span class="toc-text">导航栏菜单</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%A6%96%E9%A1%B5-Title-%E6%88%96%E8%80%85-Avatar"><span class="toc-number">2.</span> <span class="toc-text">首页 Title 或者 Avatar</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BA%A7%E5%8F%B3%E9%93%AD-amp-%E7%A4%BE%E4%BA%A4%E5%9B%BE%E6%A0%87"><span class="toc-number">3.</span> <span class="toc-text">座右铭&amp;社交图标</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9B%BE%E7%89%87%E6%87%92%E5%8A%A0%E8%BD%BD"><span class="toc-number">4.</span> <span class="toc-text">图片懒加载</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E7%BD%AE%E9%A1%B6"><span class="toc-number">5.</span> <span class="toc-text">文章置顶</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E7%9A%84meta%E8%AE%BE%E7%BD%AE"><span class="toc-number">6.</span> <span class="toc-text">文章的meta设置</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%A6%96%E9%A1%B5%E6%96%87%E7%AB%A0%E9%9A%90%E8%97%8F"><span class="toc-number">7.</span> <span class="toc-text">首页文章隐藏</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95"><span class="toc-number">8.</span> <span class="toc-text">文章目录</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E8%87%AA%E5%8A%A8%E6%91%98%E8%A6%81"><span class="toc-number">9.</span> <span class="toc-text">文章自动摘要</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F"><span class="toc-number">10.</span> <span class="toc-text">评论系统</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%A8%E5%B1%80%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE"><span class="toc-number">11.</span> <span class="toc-text">全局字体设置</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%99%BE%E5%BA%A6-amp-%E8%B0%B7%E6%AD%8C%E5%88%86%E6%9E%90"><span class="toc-number">12.</span> <span class="toc-text">百度&amp;谷歌分析</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%99%BE%E5%BA%A6%E8%87%AA%E5%8A%A8%E6%8E%A8%E9%80%81"><span class="toc-number">13.</span> <span class="toc-text">百度自动推送</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#fancybox"><span class="toc-number">14.</span> <span class="toc-text">fancybox</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE"><span class="toc-number">15.</span> <span class="toc-text">代码高亮</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E6%9E%9C%E4%BD%A0%E7%9A%84blank%E4%B8%BB%E9%A2%98%E7%89%88%E6%9C%AC%E5%9C%A8-V1-85%E5%89%8D%EF%BC%8C%E5%88%99%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E6%96%B9%E6%B3%95%E5%A6%82%E4%B8%8B"><span class="toc-number">15.1.</span> <span class="toc-text">如果你的blank主题版本在 V1.85前，则代码高亮方法如下</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#highlight-%E7%94%A8%E6%B3%95"><span class="toc-number">15.2.</span> <span class="toc-text">highlight 用法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E6%9E%9C%E4%BD%A0%E7%9A%84blank%E4%B8%BB%E9%A2%98%E7%89%88%E6%9C%AC%E5%9C%A8-V1-85%E5%90%8E%EF%BC%8C%E5%88%99%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E6%96%B9%E6%B3%95%E5%A6%82%E4%B8%8B"><span class="toc-number">15.3.</span> <span class="toc-text">如果你的blank主题版本在 V1.85后，则代码高亮方法如下</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#MathJax%E6%94%AF%E6%8C%81"><span class="toc-number">16.</span> <span class="toc-text">MathJax支持</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mermaid%E6%B5%81%E7%A8%8B%E5%9B%BE"><span class="toc-number">17.</span> <span class="toc-text">mermaid流程图</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-number">17.1.</span> <span class="toc-text">使用方法</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%A2%84%E5%8A%A0%E8%BD%BD"><span class="toc-number">18.</span> <span class="toc-text">预加载</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BE%A7%E8%BE%B9%E6%A0%8F%E5%85%A8%E5%B1%80%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8"><span class="toc-number">19.</span> <span class="toc-text">侧边栏全局音乐播放器</span></a></li></ol>
+      </div>
+    
+  <div class="content">
+        <div><p>hexo-theme-blank 文档二 ，这篇文章，介绍 blank 主题的其他个性化设置</p>
+<h1 id="导航栏菜单"><a href="#导航栏菜单" class="headerlink" title="导航栏菜单"></a>导航栏菜单</h1><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># 顶部菜单  </span></span><br><span class="line"><span class="meta"># 如果不需要显示某项,可以用<span class="string">&#x27;#&#x27;</span>注释掉</span></span><br><span class="line"><span class="symbol">menu:</span></span><br><span class="line"><span class="symbol">  search:</span> <span class="meta-keyword">/search/</span> || fas fa-search-plus || rgb(<span class="number">3</span> <span class="number">169</span> <span class="number">244</span>)</span><br><span class="line"><span class="symbol">  home:</span> / || fab fa-fort-awesome || rgb(<span class="number">255</span> <span class="number">107</span> <span class="number">107</span>)</span><br><span class="line"><span class="symbol">  archive:</span> <span class="meta-keyword">/archives/</span> || fas fa-archive || rgb(<span class="number">10</span> <span class="number">189</span> <span class="number">227</span>)</span><br><span class="line"><span class="symbol">  tag:</span> <span class="meta-keyword">/tags/</span> || fas fa-hashtag || rgb(<span class="number">254</span> <span class="number">202</span> <span class="number">87</span>)</span><br><span class="line"><span class="symbol">  categories:</span> /categories || far fa-folder-open || rgb(<span class="number">29</span> <span class="number">209</span> <span class="number">161</span>)</span><br><span class="line"><span class="symbol">  about:</span> <span class="meta-keyword">/about/</span> || fab fa-grav || rgb(<span class="number">154</span> <span class="number">106</span> <span class="number">247</span>)</span><br><span class="line"><span class="symbol">  guestbook:</span> <span class="meta-keyword">/guestbook/</span> || fab fa-telegram || hsl(<span class="number">205</span>deg <span class="number">100</span>% <span class="number">50</span>%)</span><br><span class="line"><span class="symbol">  friends:</span> <span class="meta-keyword">/link/</span> || fab fa-weixin || hsl(<span class="number">152</span>deg <span class="number">73</span>% <span class="number">45</span>%)</span><br><span class="line">  说说: <span class="meta-keyword">/shuoshuo/</span> || fas fa-coffee ||<span class="meta">#31c7c1</span></span><br></pre></td></tr></table></figure>
+<p>从最后一栏可以看出，可以自定义图标的颜色了<br>颜色支持 <code>rgb</code> <code>hsl</code> <code>#</code> 三种格式<br>可以根据你想要的颜色修改即可</p>
+<h1 id="首页-Title-或者-Avatar"><a href="#首页-Title-或者-Avatar" class="headerlink" title="首页 Title 或者 Avatar"></a>首页 Title 或者 Avatar</h1><p>打开主题设置</p>
+<figure class="highlight oxygene"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 首页显示Avatar或者Title</span><br><span class="line">logo:</span><br><span class="line">  <span class="function"><span class="keyword">method</span>:</span> <span class="number">1</span></span><br><span class="line">  avatar: </span><br></pre></td></tr></table></figure>
+<ol>
+<li>如果 <code>method: 1</code> ，则显示 <code>hexo</code> 根目录 <code>_config.yml</code> 的 <code>title: xxx</code></li>
+<li>如果 <code>method: 2</code>，则显示头像Avatar，把图片链接填入 <code>avatar: </code>后面</li>
+</ol>
+<ul>
+<li>标题（Title）模式</li>
+</ul>
+<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/a2396837/CDN@latest/images/2020/07/27/21ec07acab3c58a9832b5130ad858fde.png"></p>
+<ul>
+<li>头像（Avatar）模式</li>
+</ul>
+<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/a2396837/CDN@latest/images/2020/07/27/d2418898f0a50a3c853ad40e1d75197e.png"></p>
+<h1 id="座右铭-amp-社交图标"><a href="#座右铭-amp-社交图标" class="headerlink" title="座右铭&amp;社交图标"></a>座右铭&amp;社交图标</h1><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">subtitle_social</span>: </span><br><span class="line">  <span class="attribute">method</span>: <span class="number">3</span></span><br><span class="line">  <span class="attribute">subtitle</span>:</span><br><span class="line">    <span class="attribute">motto</span>: Do what you love,love what you do.</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">1.25em</span></span><br><span class="line">    <span class="attribute">font-color</span>: <span class="string">&quot;#84ccc9&quot;</span></span><br><span class="line"></span><br><span class="line">  <span class="attribute">social</span>:</span><br><span class="line">    <span class="attribute">Github</span>:</span><br><span class="line">      <span class="attribute">icon</span>: iconfont icon-GitHub</span><br><span class="line">      <span class="attribute">url</span>: <span class="attribute">https</span>:<span class="comment">//github.com/a2396837</span></span><br></pre></td></tr></table></figure>
+<ol>
+<li>如果 <code>method: 1</code> 只显示 <code>subtitle</code></li>
+<li>如果 <code>method: 2</code> 同时显示 <code>subtitle</code>和<code>social</code></li>
+<li>如果 <code>method: 3</code> 只显示 <code>social</code></li>
+</ol>
+<ul>
+<li>subtitle部分，可以在 motto 改成你喜欢的文字，还可以修改字体大小，字体颜色 </li>
+</ul>
+<ul>
+<li>social部分，支持 <a target="_blank" rel="noopener" href="https://fontawesome.com/">fontawesome</a>  <a target="_blank" rel="noopener" href="https://www.iconfont.cn/">iconfont</a></li>
+</ul>
+<div class="note note-info">
+fontawesome 写法为： 显示图标名字-图标-链接
+
+<p>举个例子，我要显示我的Github和邮箱</p>
+</div>
+
+
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">social</span>:</span><br><span class="line">  <span class="attribute">Github</span>:</span><br><span class="line">    <span class="attribute">icon</span>: fab fa-github</span><br><span class="line">    <span class="attribute">url</span>: <span class="attribute">https</span>:<span class="comment">//github.com/a2396837</span></span><br><span class="line">  <span class="attribute">Email</span>:</span><br><span class="line">    <span class="attribute">icon</span>: fa fa-envelope</span><br><span class="line">    <span class="attribute">url</span>: <span class="attribute">mailto</span>:<span class="number">894049579</span><span class="variable">@qq</span>.com</span><br></pre></td></tr></table></figure>
+<ul>
+<li>（缺点）fontawesome 的图片都是单色的，所以更建议使用 iconfont 的图标 </li>
+</ul>
+<h1 id="图片懒加载"><a href="#图片懒加载" class="headerlink" title="图片懒加载"></a>图片懒加载</h1><p>打开主题设置（默认打开）</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Lazyload (图片懒加载)</span></span><br><span class="line">lazyload:</span><br><span class="line">  enable: true</span><br><span class="line">  image: <span class="regexp">/img/</span>loading.gif</span><br><span class="line">  script: https:<span class="regexp">//</span>cdn.jsdelivr.net<span class="regexp">/npm/</span>vanilla-lazyload<span class="regexp">/dist/</span>lazyload.iife.min.js</span><br></pre></td></tr></table></figure>
+
+<h1 id="文章置顶"><a href="#文章置顶" class="headerlink" title="文章置顶"></a>文章置顶</h1><ul>
+<li>卸载默认排序插件</li>
+</ul>
+<figure class="highlight fortran"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-generator-<span class="built_in">index</span> --<span class="keyword">save</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>安装插件 hexo-generator-index-pin-top 或者 hexo-generator-indexed（推荐）</li>
+</ul>
+<p>安装： hexo-generator-index-pin-top</p>
+<figure class="highlight fortran"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-<span class="built_in">index</span>-pin-top --<span class="keyword">save</span></span><br></pre></td></tr></table></figure>
+<p>安装：hexo-generator-indexed （推荐）</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> hexo-generator-indexed</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>如果你使用 hexo-generator-index-pin-top ，在需要置顶的文章的<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter.html">Front-matter</a>中加上top即可：</li>
+</ul>
+<figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">title: </span><br><span class="line"><span class="keyword">tags:</span></span><br><span class="line">top: true   +加上这个</span><br><span class="line">date: 2020<span class="string">-04</span><span class="string">-28</span> 12:01:56</span><br><span class="line">categories:</span><br></pre></td></tr></table></figure>
+<ul>
+<li>如果你使用 hexo-generator-indexed ，在需要置顶的文章的<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter.html">Front-matter</a>中加上sticky即可：</li>
+</ul>
+<figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">title: </span><br><span class="line"><span class="keyword">tags:</span></span><br><span class="line">sticky: 1   支持多文章置顶，数字越大，置顶的优先级越大</span><br><span class="line">date: 2020<span class="string">-04</span><span class="string">-28</span> 12:01:56</span><br><span class="line">categories:</span><br></pre></td></tr></table></figure>
+<h1 id="文章的meta设置"><a href="#文章的meta设置" class="headerlink" title="文章的meta设置"></a>文章的meta设置</h1><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/a2396837/CDN@latest/images/2020/07/23/meta1.png"><br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/a2396837/CDN@latest/images/2020/07/23/meta2.png"></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 文章的相关信息</span></span><br><span class="line"><span class="attr">post_meta:</span></span><br><span class="line">  <span class="attr">page:</span></span><br><span class="line">    <span class="attr">date:</span> <span class="literal">true</span>                    <span class="comment"># 主页是否显示日期</span></span><br><span class="line">    <span class="attr">categories:</span> <span class="literal">true</span>             <span class="comment"># 主页是否显示分类</span></span><br><span class="line">    <span class="attr">wordcount:</span> <span class="literal">true</span>             <span class="comment"># 主页是否显示字数统计</span></span><br><span class="line">    <span class="attr">min2read:</span> <span class="literal">true</span>             <span class="comment"># 主页是否显示阅读时长</span></span><br><span class="line">  <span class="attr">post:</span></span><br><span class="line">    <span class="attr">date:</span> <span class="literal">true</span>                <span class="comment"># 文章页是否显示日期</span></span><br><span class="line">    <span class="attr">categories:</span> <span class="literal">true</span>         <span class="comment"># 文章页是否显示字分类</span></span><br><span class="line">    <span class="attr">wordcount:</span> <span class="literal">true</span>         <span class="comment"># 文章页是否显示字数统计</span></span><br><span class="line">    <span class="attr">min2read:</span> <span class="literal">true</span>         <span class="comment"># 文章页是否显示阅读时长</span></span><br></pre></td></tr></table></figure>
+<h1 id="首页文章隐藏"><a href="#首页文章隐藏" class="headerlink" title="首页文章隐藏"></a>首页文章隐藏</h1><ul>
+<li>首页文章隐藏功能，需要 <code>hexo-generator-indexed</code> 插件</li>
+</ul>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> hexo-generator-indexed</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>在文章的 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter.html">Front-matter</a> 中增加一个 hide 参数用来隐藏。</li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">example</span></span><br><span class="line"><span class="attr">hide:</span> <span class="literal">true</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+<h1 id="文章目录"><a href="#文章目录" class="headerlink" title="文章目录"></a>文章目录</h1><p>主题自带了一个很简单的目录<br>可以在</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 文章目录</span></span><br><span class="line"><span class="attr">toc:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>把它关掉，或者在文章 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter.html">Front-matter</a> 把它关掉</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br><span class="line"><span class="attr">comments:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2019-8</span><span class="number">-25</span> <span class="number">15</span><span class="string">:23:36</span></span><br><span class="line"><span class="attr">abbrlink:</span> <span class="number">16107</span></span><br><span class="line"><span class="attr">toc:</span> <span class="literal">false</span>   <span class="string">+加上这个</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+<h1 id="文章自动摘要"><a href="#文章自动摘要" class="headerlink" title="文章自动摘要"></a>文章自动摘要</h1><p>打开主题设置</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 文章自动摘要</span></span><br><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">length:</span> <span class="number">350</span></span><br></pre></td></tr></table></figure>
+<p>文章默认显示全文，如果只想显示摘要，可以使用以下方法只显示摘要</p>
+<div class="note note-info">
+
+<ol>
+<li><p>(推荐）使用 <code>&lt;!--more--&gt;</code> 标记精确截取文章部分作为摘要。</p>
+</li>
+<li><p>在文章 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter.html">Front-matter</a> 写 <code>description</code></p>
+</li>
+<li><p>在文章 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter.html">Front-matter</a> 写 <code>auto_excerpt: true</code> 即可显示 <code>length: 350</code> 个字的摘要</p>
+</div>
+
+
+
+</li>
+</ol>
+<h1 id="评论系统"><a href="#评论系统" class="headerlink" title="评论系统"></a>评论系统</h1><p>目前-截至时间2021/1/5</p>
+<p>增加了Waline评论系统</p>
+<p>所以支持的评论是:</p>
+<ul>
+<li>Valine</li>
+</ul>
+<ul>
+<li>Waline</li>
+</ul>
+<p>用法: 打开主题设置.yml</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">使用valine</span></span><br><span class="line"><span class="attr">valine:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>或者</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">使用Waline</span></span><br><span class="line"><span class="attr">waline:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<div class="note note-warning">
+    评论系统只能用一个，当你把其中一个<code>enable: true</code>，其他评论系统<code>enable: false</code> 必须关掉
+  </div>
+
+<h1 id="全局字体设置"><a href="#全局字体设置" class="headerlink" title="全局字体设置"></a>全局字体设置</h1><p>如果你想要谷歌字体替换默认的全局字体，可以在配置文件中添加</p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">fonts</span>:</span><br><span class="line">  <span class="attribute">font_link</span>:</span><br><span class="line">  <span class="attribute">font-family</span>:</span><br></pre></td></tr></table></figure>
+<p>例如，之前我觉得这个主题配上思源宋体很好看，所以我设置成这样</p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">fonts</span>:</span><br><span class="line">  <span class="attribute">font_link</span>: <span class="attribute">https</span>:<span class="comment">//fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&amp;display=swap</span></span><br><span class="line">  <span class="attribute">font-family</span>: Noto Serif SC, serif, sans-serif</span><br></pre></td></tr></table></figure>
+<p>虽然谷歌字体服务器已经在中国，但是路线不同，难免解析到美国，日本的服务器，网站速度难免会拖慢，所以更建议用默认字体。</p>
+<h1 id="百度-amp-谷歌分析"><a href="#百度-amp-谷歌分析" class="headerlink" title="百度&amp;谷歌分析"></a>百度&amp;谷歌分析</h1><p>在 <code>_config.yml</code> ，添加获取的代码即可</p>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#谷歌分析</span></span><br><span class="line"><span class="symbol">google_analytics:</span> xxxxxx</span><br><span class="line"><span class="meta">#百度分析</span></span><br><span class="line"><span class="symbol">baidu_analytics:</span> xxxxxx</span><br></pre></td></tr></table></figure>
+<h1 id="百度自动推送"><a href="#百度自动推送" class="headerlink" title="百度自动推送"></a>百度自动推送</h1><p>在 <code>config.yml</code> ,开启即可</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#百度自动推送</span></span><br><span class="line"><span class="attr">baidu_push:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>如果您觉得SEO还不够，您可以安装 sitemap 插件</p>
+<ul>
+<li>执行以下代码</li>
+</ul>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install </span>hexo-generator-sitemap --save</span><br><span class="line">npm <span class="keyword">install </span>hexo-generator-<span class="keyword">baidu-sitemap </span>--save</span><br></pre></td></tr></table></figure>
+<ul>
+<li>在博客目录的 <code>config.yml</code> 最下面新增</li>
+</ul>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># 自动生成sitemap</span></span><br><span class="line"><span class="symbol">sitemap:</span></span><br><span class="line"><span class="symbol">path:</span> sitemap.xml</span><br><span class="line"><span class="symbol">baidusitemap:</span></span><br><span class="line"><span class="symbol">path:</span> baidusitemap.xml</span><br></pre></td></tr></table></figure>
+
+<h1 id="fancybox"><a href="#fancybox" class="headerlink" title="fancybox"></a>fancybox</h1><p>主题 <code>_config.yml</code> 处开启</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># fancybox</span></span><br><span class="line"><span class="attr">fancybox:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="代码高亮"><a href="#代码高亮" class="headerlink" title="代码高亮"></a>代码高亮</h1><div class="note note-info">
+    v1.85之前
+  </div>
+
+
+<h2 id="如果你的blank主题版本在-V1-85前，则代码高亮方法如下"><a href="#如果你的blank主题版本在-V1-85前，则代码高亮方法如下" class="headerlink" title="如果你的blank主题版本在 V1.85前，则代码高亮方法如下"></a>如果你的<code>blank</code>主题版本在 V1.85前，则代码高亮方法如下</h2><p><code>hexo-theme-blank</code>,支持所有 <code>highlightjs</code> 的主题样式<br>由于 hexo 内置的 highlight 代码行号有些问题，所以我另外引进的代码行号，必须在hexo根目录的 <code>_config.yml</code> 进行关闭：</p>
+<ul>
+<li>打开hexo根目录的 <code>_config.yml</code> ，找到 <code>highlight</code> 部分，改成下面：</li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">highlight:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">line_number:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">auto_detect:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">tab_replace:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">  <span class="attr">wrap:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">hljs:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>寻找你喜欢的代码高亮 </li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://highlightjs.org/">https://highlightjs.org/</a></p>
+<ul>
+<li>找到对应的 <code>css</code> 的CDN </li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.3/build/styles/">https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.3/build/styles/</a> </p>
+<ul>
+<li>复制粘贴到主题目录下的 <code>_config.yml</code> 相应位置</li>
+</ul>
+<h2 id="highlight-用法"><a href="#highlight-用法" class="headerlink" title="highlight 用法"></a>highlight 用法</h2><ul>
+<li>如果你只想高亮 <code>短代码</code>，<code>类似这样</code></li>
+</ul>
+<p>你可以用 </p>
+<figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">``</span>短代码<span class="string">``</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ul>
+<li>如果你想要高亮 <code>长代码</code></li>
+</ul>
+<p>把2个点改成3个就行</p>
+<div class="note note-info">
+    v1.85之后
+  </div>
+
+<h2 id="如果你的blank主题版本在-V1-85后，则代码高亮方法如下"><a href="#如果你的blank主题版本在-V1-85后，则代码高亮方法如下" class="headerlink" title="如果你的blank主题版本在 V1.85后，则代码高亮方法如下"></a>如果你的<code>blank</code>主题版本在 V1.85后，则代码高亮方法如下</h2><p>新版本，把<code>highlightjs</code>的 js和 <code>highlightjs-line-numbers</code> （行号）的 js 给去掉了，使用 <code>hexo</code> 内置的<code>highlight</code>的js</p>
+<p>用法：</p>
+<ul>
+<li>进入根目录下的 <code>_config.yml</code> ，把 <code>hljs: false</code> </li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">highlight:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">line_number:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">auto_detect:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">tab_replace:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">  <span class="attr">wrap:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">hljs:</span> <span class="literal">false</span>  <span class="string">把这个给关了</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>进入highlightjs官网<a target="_blank" rel="noopener" href="https://highlightjs.org/">https://highlightjs.org/</a> ，挑选你喜欢的样式</p>
+</li>
+<li><p>主题自带了 <code>highlightjs</code> 的94种样式，所以你只需要修改这个位置的的名称</p>
+</li>
+</ul>
+<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/a2396837/CDN@latest/images/2020/08/25/4d763b784b6b3032d273c8e3e6b7d535.png"></p>
+<p>可以从图片看出，现在的样式是 <code>atom-one-light</code> ，你也可以换成别的样式，比如 vs,github,tomorrow……</p>
+<ul>
+<li>当把 <code>- /css/partial/highlight/atom-one-light.css  # highlight代码高亮样式</code>  删掉后，没有代码高亮，如图</li>
+</ul>
+<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/a2396837/CDN@latest/images/2020/08/25/dafafawga.png"></p>
+<h1 id="MathJax支持"><a href="#MathJax支持" class="headerlink" title="MathJax支持"></a>MathJax支持</h1><p>Supported by <a target="_blank" rel="noopener" href="https://github.com/a2396837/hexo-theme-blank/pull/1">LuminousXLB</a></p>
+<p>在主题目录下的_config.yml，把 MathJax 打开即可</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#MathJax</span></span><br><span class="line">mathjax:</span><br><span class="line">  enable: true</span><br><span class="line">  script: https:<span class="regexp">//</span>cdn.jsdelivr.net<span class="regexp">/npm/m</span>athjax@<span class="number">3.0</span>.<span class="number">1</span><span class="regexp">/es5/</span>tex-mml-chtml.js</span><br></pre></td></tr></table></figure>
+<h1 id="mermaid流程图"><a href="#mermaid流程图" class="headerlink" title="mermaid流程图"></a>mermaid流程图</h1><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># mermaid</span></span><br><span class="line">mermaid:</span><br><span class="line">  enable: true</span><br><span class="line">  theme: default   <span class="comment">#可选 default/forest/dark/neutral</span></span><br><span class="line">  script: https:<span class="regexp">//</span>cdn.jsdelivr.net<span class="regexp">/npm/m</span>ermaid<span class="regexp">/dist/m</span>ermaid.min.js</span><br></pre></td></tr></table></figure>
+<p>使用 mermaid 标籤可以绘製 Flowchart（流程图）、Sequence diagram（时序图 ）、Class Diagram（类别图）、State Diagram（状态图）、Gantt（甘特图）和 Pie Chart（圆形图），具体可以查看 <a target="_blank" rel="noopener" href="https://mermaid-js.github.io/mermaid/#/">mermaid</a> 文档</p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">mermaid</span> %&#125;</span></span><br><span class="line"><span class="xml">内容</span></span><br><span class="line"><span class="template-tag">&#123;% <span class="name">endmermaid</span> %&#125;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>例如：</li>
+</ul>
+<figure class="highlight coq"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">graph TD</span><br><span class="line">    A[Christmas] --&gt;|<span class="type">Get</span> money| <span class="type">B</span>(Go shopping)</span><br><span class="line">    B --&gt; C&#123;<span class="keyword">Let</span> me think&#125;</span><br><span class="line">    C --&gt;|<span class="type">One</span>| <span class="type">D</span>[Laptop]</span><br><span class="line">    C --&gt;|<span class="type">Two</span>| <span class="type">E</span>[iPhone]</span><br><span class="line">    C --&gt;|<span class="type">Three</span>| <span class="type">F</span>[Car]</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="预加载"><a href="#预加载" class="headerlink" title="预加载"></a>预加载</h1><p>可根据需求打开或者关闭</p>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># https:<span class="comment">//instant.page/</span></span></span><br><span class="line"><span class="meta"># prefetch (预加载)</span></span><br><span class="line"><span class="symbol">instantpage:</span></span><br><span class="line"><span class="symbol">  enable:</span> true</span><br><span class="line"><span class="symbol">  script:</span> https:<span class="comment">//cdn.jsdelivr.net/npm/instant.page/instantpage.min.js</span></span><br></pre></td></tr></table></figure>
+<h1 id="侧边栏全局音乐播放器"><a href="#侧边栏全局音乐播放器" class="headerlink" title="侧边栏全局音乐播放器"></a>侧边栏全局音乐播放器</h1><ul>
+<li>在主题配置文件打开（默认关闭）</li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">audio:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span>  <span class="string">(false</span> <span class="string">改</span> <span class="literal">true</span><span class="string">)</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>在<code>source\_data</code>目录下创建<code>audio.yml</code></li>
+</ul>
+<ul>
+<li>在 <a target="_blank" rel="noopener" href="https://music.liuzhijin.cn/">这个网站</a>找到你喜欢的音乐的链接,图片,其他信息</li>
+</ul>
+<ul>
+<li>按这个格式写入<code>audio.yml</code></li>
+</ul>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- <span class="attr">title:</span> <span class="string">&#x27;歌名&#x27;</span></span><br><span class="line">  <span class="symbol">artist:</span> <span class="string">&#x27;歌手&#x27;</span></span><br><span class="line">  <span class="symbol">mp3:</span> <span class="string">&#x27;歌的链接&#x27;</span></span><br><span class="line">  <span class="symbol">cover:</span> <span class="string">&#x27;歌曲图片&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>示例</li>
+</ul>
+<figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">- title: &#x27;Old Chinese song&#x27;</span><br><span class="line">  artist: &#x27;Kitti Kuremanee&#x27;</span><br><span class="line">  mp3: &#x27;https://music.163.com/song/media/outer/url?id=<span class="number">162543</span>3.mp3&#x27;</span><br><span class="line">  cover: &#x27;https://p3.music.126.net/UWSKMO96-nqAn-l1BGX9SQ==/<span class="number">89390295343503</span>9.jpg&#x27;</span><br><span class="line"></span><br><span class="line">- title: &#x27;所念皆星河&#x27;</span><br><span class="line">  artist: &#x27;CMJ&#x27;</span><br><span class="line">  mp3: &#x27;https://music.163.com/song/media/outer/url?id=<span class="number">1384026889</span>.mp3&#x27;</span><br><span class="line">  cover: &#x27;https://p4.music.126.net/M34HFzLO2xhDLuX_zEALKA==/<span class="number">10995116429134</span><span class="number">7934</span>.jpg&#x27;</span><br><span class="line"></span><br><span class="line">- title: &#x27;圆&#x27;</span><br><span class="line">  artist: &#x27;AGA&#x27;</span><br><span class="line">  mp3: &#x27;https://music.163.com/song/media/outer/url?id=<span class="number">40647538</span>8.mp3&#x27;</span><br><span class="line">  cover: &#x27;https://p2.music.126.net/UIE3T_txKzd6e8PORxmpCQ==/<span class="number">10995116341295</span><span class="number">9613</span>.jpg&#x27;</span><br><span class="line"></span><br><span class="line">- title: &#x27;高山低谷&#x27;</span><br><span class="line">  artist: &#x27;林奕匡&#x27;</span><br><span class="line">  mp3: &#x27;https://music.163.com/song/media/outer/url?id=<span class="number">28457932</span>.mp3&#x27;</span><br><span class="line">  cover: &#x27;https://p1.music.126.net/-Ghh732Mw5P7SroEr954qA==/<span class="number">60110300693589</span>94.jpg&#x27;</span><br><span class="line"></span><br><span class="line">- title: &#x27;高山低谷&#x27;</span><br><span class="line">  artist: &#x27;林奕匡&#x27;</span><br><span class="line">  mp3: &#x27;https://music.163.com/song/media/outer/url?id=<span class="number">36569474</span>.mp3&#x27;</span><br><span class="line">  cover: &#x27;https://p1.music.126.net/-Ghh732Mw5P7SroEr954qA==/<span class="number">60110300693589</span>94.jpg&#x27;</span><br><span class="line"></span><br><span class="line">- title: &#x27;一双手&#x27;</span><br><span class="line">  artist: &#x27;林奕匡&#x27;</span><br><span class="line">  mp3: &#x27;https://music.163.com/song/media/outer/url?id=<span class="number">28457932</span>.mp3&#x27;</span><br><span class="line">  cover: &#x27;https://p1.music.126.net/npCOwk1Gcc6N8UwxctfXSA==/<span class="number">18345351509637</span>971.jpg&#x27;</span><br><span class="line"></span><br><span class="line">- title: &#x27;云烟成雨&#x27;</span><br><span class="line">  artist: &#x27;房东的猫&#x27;</span><br><span class="line">  mp3: &#x27;https://music.163.com/song/media/outer/url?id=<span class="number">51336072</span>1.mp3&#x27;</span><br><span class="line">  cover: &#x27;https://p1.music.126.net/DSTg1dR7yKsyGq4IK3NL8A==/<span class="number">10995116304605</span><span class="number">0093</span>.jpg&#x27;</span><br></pre></td></tr></table></figure></div>
+        
+          <div class="post-copyright">
+                  <div class="copyright-item">
+                      <span> 作者: DmxZ</span>
+                  </div>
+                  <div class="copyright-item">
+                      <span> 链接: <a href="https://dmx.pub/posts/73f92298.html">https://dmx.pub/posts/73f92298.html</a></span>
+                  </div>
+                  <div class="copyright-item">
+                      <span> 声明: 本博客所有文章除特别声明外，均采用许可协议 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> 转载请注明出处！</span>
+                  </div>
+          </div>
+        
+  </div>
+
+  <div class="share-reward">
+    <div class="share">
+        
+<div class="social-share" data-sites="facebook,twitter,wechat,weibo,qq"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css">
+<script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script>
+
+
+      </div>
+        <div class="reward">
+          
+  <div style="padding: 10px 0; margin-left: 20px; width: 90%; text-align: center;">
+    <div class="reward-content">
+        <ul id="donateBox" class="list pos-a">
+          
+           <li id="PayPal"><a href="https://paypal.me" target="_blank" title="贝宝">贝宝</a></li>
+            
+          
+            <li id="AliPay" title="支付宝"><img data-img="/img/alipay.jpg" onerror=this.onerror=null,this.src="/img/loading.gif"></img></li>
+               
+                 
+            <li id="WeChat" title="微信"><img date-img="/img/wechat.jpg" onerror=this.onerror=null,this.src="/img/loading.gif"></img></li>
+                      
+          </ul>
+        <div id="QRBox" class="pos-f left-100">
+          <div id="MainBox"></div>
+        </div>
+    </div>
+  </div>
+  
+        </div>
+    </div>
+    
+    <div class="post_tags">
+      
+        <i class="fas fa-tag"></i> <a href="/tags/hexo/" class="tag">hexo</a>
+      
+        <i class="fas fa-tag"></i> <a href="/tags/theme/" class="tag">theme</a>
+      
+        <i class="fas fa-tag"></i> <a href="/tags/blank/" class="tag">blank</a>
+      
+    </div>
+    <div class="post-nav">
+      
+        <div class="post-nav-prev post-nav-item">
+            <a href="/posts/1dd6ddd1.html" >hexo-theme-blank 文档-标签插件<i class="fa fa-chevron-left"></i></a>
+        </div>
+      
+      
+        <div class="post-nav-next post-nav-item">
+            <a href="/posts/a832e6e1.html" >hexo-theme-blank 文档-主题安装<i class="fa fa-chevron-right"></i></a>
+        </div>
+      
+    </div>
+      
+
+
+
+
+</article>
+
+    
+<a id="gotop" href="javascript:" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    
+
+
+
+
+
+
+    
+<div id="bottom-outer">
+    <div id="bottom-inner">
+        © 2020 <i class="fa fa-heart" id="heart"></i> DmxZ 
+        <br>
+        Powered by 
+        <a target="_blank" rel="noopener" href="http://hexo.io">hexo</a> | Theme is <a target="_blank" rel="noopener" href="https://github.com/a2396837/hexo-theme-blank/">blank</a>
+        
+          <div class="icp-info">
+            
+          <a href="https://icp.gov.moe/?keyword=20206688" target="_blank"> 萌ICP备 20206688号</a>
+        </div>
+        
+    </div>  
+  </div>
+  
+<script src="https://cdn.jsdelivr.net/npm/layui-src@2.5.5/dist/layui.min.js"></script>
+
+
+  
+    <script src="/js/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
+  
+    <script src="/js/jquery.snow.js"></script>
+  
+
+ 
+
+
+
+  <script>
+    window.lazyLoadOptions = {
+      elements_selector: 'img',
+      threshold: 0
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script>   
+  
+
+
+  <script>
+    var images = $('img').not('.nav-logo img').not('.card img').not($('a>img')).not('.reward-content img')
+    images.each(function (i, o) {
+      var lazyloadSrc = $(o).attr('data-src') ? $(o).attr('data-src') : $(o).attr('src')
+      $(o).wrap(`<a href="${lazyloadSrc}" data-fancybox="group" data-caption="${$(o).attr('alt')}" class="fancybox"></a>`)
+    })
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script>
+  <script>
+        $().fancybox({
+      selector: '[data-fancybox]',
+      loop: true,
+      transitionEffect: 'slide',
+      protect: true,
+      buttons: ['slideShow', 'fullScreen', 'thumbs', 'close']
+    })
+  </script>   
+  
+
+
+
+
+
+
+  <script>
+    jQuery(document).ready(function () {
+      var QRBox = $('#QRBox');
+      var MainBox = $('#MainBox');
+      var AliPayQR = '/img/alipay.jpg';
+      var WeChanQR = '/img/wechat.jpg';
+
+      function showQR(QR) {
+        if (QR) {
+          MainBox.css('background-image', 'url(' + QR + ')');
+        }
+        $('#donateBox').addClass('blur');
+        QRBox.fadeIn(300, function (argument) {
+          MainBox.addClass('showQR');
+        });
+      }
+
+      $('#donateBox>li').click(function (event) {
+        var thisID = $(this).attr('id');
+        if (thisID === 'AliPay') {
+          showQR(AliPayQR);
+        } else if (thisID === 'WeChat') {
+          showQR(WeChanQR);
+        }
+      });
+
+      MainBox.click(function (event) {
+        MainBox.removeClass('showQR').addClass('hideQR');
+        setTimeout(function (a) {
+          QRBox.fadeOut(300, function (argument) {
+            MainBox.removeClass('hideQR');
+          });
+          $('#DonateText,#donateBox,#github').removeClass('blur');
+        }, 600);
+
+      });
+    });
+  </script>
+  
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script>
+  
+
+
+  <script src="https://cdn.jsdelivr.net/gh/a2396837/CDN@latest/js/firework.js"></script>
+  
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js"></script>
+<script>
+!function (e, t, a) {
+  var initCopyCode = function(){
+    var copyHtml = '';
+    copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+    copyHtml += '  <i class="fa fa-clipboard"></i><span>复制</span>';
+    copyHtml += '</button>';
+    $(".highlight .code pre").before(copyHtml);
+    new ClipboardJS('.btn-copy', {
+      target: function(trigger) {
+        return trigger.nextElementSibling;
+      }
+    });
+  }
+  initCopyCode();
+}(window, document);
+</script>  
+  
+
+<script>
+  var btntop = $('#gotop');
+  btntop.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, '300');
+  });
+
+  var $table = $('.content table').not($('figure.highlight > table'))
+$table.each(function () {
+  $(this).wrap('<div class="table-wrap"></div>')
+})
+</script>
+
+
+<script type="text/javascript">
+  var snowEffectInterval = jQuery.fn.snow({
+    // min size of element (default: 20)
+    minSize: 15,
+    
+    // max size of element (default: 50)
+    maxSize: 30,
+    
+    // flake fall time multiplier (default: 20)
+    fallTimeMultiplier: 20, 
+    
+    // flake fall time difference (default: 10000)
+    fallTimeDifference: 10000, 
+    
+    // interval (miliseconds) between new element spawns (default: 500)
+    spawnInterval: 500, 
+    
+    // jQuery element to apply snow effect on (should work on any block element) (default: body)
+    target: jQuery("body"),
+    
+    //elements to use in generating snow effect
+    elements	: [
+    
+      // Element #1
+      { 
+        // html element to be spawned for this element
+        html: '<i class="far fa-snowflake" aria-hidden="true"></i>',
+        // hex color for this element - works only for font based icons
+        color: '#99CCFF'
+      },
+      
+      // Element #2
+      { 
+        // html element to be spawned for this element
+        html: '<i class="far fa-bell" aria-hidden="true"></i>',
+        // hex color for this element - works only for font based icons
+        color: '#ed9b40'
+      },
+      
+      // Element #3
+      { 
+        // html element to be spawned for this element
+        html: '<i class="fas fa-snowflake" aria-hidden="true"></i>',
+        // hex color for this element - works only for font based icons
+        color: '#99CCFF'
+      },
+      
+      // Element #4
+      {
+        // html element to be spawned for this element
+        html: '<i class="fas fa-snowman" aria-hidden="true"></i>',
+        // hex color for this element - works only for font based icons
+        color: '#CCCCFF'
+      },
+      
+      // Element #5
+      { 
+        // html element to be spawned for this element
+        html: '<i class="fas fa-snowflake" aria-hidden="true"></i>',
+        // hex color for this element - works only for font based icons
+        color: '#99CCFF'
+      },
+      // Element #6
+      { 
+        // html element to be spawned for this element
+        html: '<i class="fas fa-candy-cane" aria-hidden="true"></i>',
+        // hex color for this element - works only for font based icons
+        color: '#cc2037'
+      },
+      // Element #7
+      { 
+        // html element to be spawned for this element
+        html: '<i class="fas fa-gift" aria-hidden="true"></i>',
+        // hex color for this element - works only for font based icons
+        color: '#FF99CC'
+      },
+    ]
+  });
+</script>
+
+
+</html>
