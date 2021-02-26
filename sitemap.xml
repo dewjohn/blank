@@ -2,34 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://dmx.pub/link/index.html</loc>
-    
-    <lastmod>2021-02-26</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dmx.pub/search/index.html</loc>
-    
-    <lastmod>2021-02-26</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dmx.pub/shuoshuo/index.html</loc>
-    
-    <lastmod>2021-02-26</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dmx.pub/tags/index.html</loc>
-    
-    <lastmod>2021-02-26</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://dmx.pub/posts/264d632d.html</loc>
     
     <lastmod>2021-02-26</lastmod>
@@ -157,6 +129,34 @@
   
   <url>
     <loc>https://dmx.pub/guestbook/index.html</loc>
+    
+    <lastmod>2021-02-26</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dmx.pub/link/index.html</loc>
+    
+    <lastmod>2021-02-26</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dmx.pub/search/index.html</loc>
+    
+    <lastmod>2021-02-26</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dmx.pub/shuoshuo/index.html</loc>
+    
+    <lastmod>2021-02-26</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dmx.pub/tags/index.html</loc>
     
     <lastmod>2021-02-26</lastmod>
     
